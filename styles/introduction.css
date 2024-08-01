@@ -1,0 +1,43 @@
+.introduction {
+  /*color*/
+  position: static;
+  top: 75px;
+  left: 0;
+  right: 0;
+  padding-bottom: 5px;
+}
+.name-description{
+  text-align: center;
+  padding-top: 150px;
+}
+.name {
+  font-size: 80px;
+  font-weight: 550;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.description{
+  font-size: 35px;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.intro-pic{
+  text-align: center;
+}
+.bitmoji{
+  height: 200px;
+  border-style: solid;
+  border-color: #5e43f3;
+  border-width: 5px;
+  border-radius: 150px;
+  border-top-width: 0;
+
+  border-bottom-width: 5px;
+}
+.programming-languages{
+  margin: 150px 50px 50px 50px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
