@@ -1,11 +1,12 @@
 .currently-background{
   margin-top: 50px;
   display: flex;
+  align-items: center;
 }
 .general-photo{
-  width: 400px;
   margin: 100px;
   border-radius: 200px;
+  min-width: 500px;
 }
 
 .writing{
