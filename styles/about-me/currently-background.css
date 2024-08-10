@@ -1,0 +1,23 @@
+.currently-background{
+  margin-top: 50px;
+  display: flex;
+}
+.general-photo{
+  width: 400px;
+  margin: 100px;
+  border-radius: 200px;
+}
+
+.writing{
+  margin: 100px;
+  text-align: center;
+  padding-top: 0;
+}
+.writing-heading{
+  font-size: 75px;
+  font-weight: 700;
+}
+.writing-description{
+  font-size: 25px;
+  line-height: 35px;
+}

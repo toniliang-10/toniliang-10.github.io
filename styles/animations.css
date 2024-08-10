@@ -1,0 +1,44 @@
+/* home page fade in */
+@keyframes moving-programming-languages {
+  0% {
+    transform: translateX(-50px);
+  }
+  50%{
+    transform: translateX(50px);
+  }
+  100%{
+    transform: translateX(-50px);
+  }
+}
+.moving-programming-languages{
+  
+  animation: moving-programming-languages 5s linear infinite;
+}
+
+/* about me page animations: */
+
+@keyframes slideFromLeft{
+  from {
+    transform: translateX(-500px)
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+.slideFromLeft{
+  animation: slideFromLeft .6s ease-out forwards;
+}
+
+@keyframes slideFromRight{
+  from {
+    transform: translateX(500px)
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+
+.slideFromRight{
+  animation: slideFromRight .6s ease-out forwards;
+}

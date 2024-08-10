@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Portfolio</title>
+    <title> Contact</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel = "stylesheet" href = "styles/header.css">
+    <link rel = "stylesheet" href = "styles/contact/contact.css">
 
 
     <style>
       body {
         background-color: #282828;
-        font-family: Roboto+Condensed, Arial;
+        font-family: "Varela Round", sans-serif, Arial;
         color: white;
         margin: 0;
         padding: 0;
@@ -42,5 +43,66 @@
         </a>
       </div>
     </header>
+
+    <section class = contact-me>
+      <div class = contacts>
+        <div class = photo-and-contacts>
+          <img class = contact-profile-photo src = pictures/contact-me-pics/contactProfile.png>
+          <div class = my-contacts>            
+            <img class = email-icon src = pictures/contact-me-pics/email-icon.png>            
+            <br>
+            <p class = my-email>
+              toniliang10@gmail.com
+            </p>
+            <img class = phone-icon src = pictures/contact-me-pics/phone-icon.png>            
+            <br>
+            <p class = my-number>
+              (646)752-8829
+            </p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class = links-to-other-sites>
+          <div class = linkedin-link>
+            <a href = https://www.linkedin.com/in/toniliang10 target = _blank>
+              <img class = linkedin-icon src = pictures/contact-me-pics/linkedin-icon.png>
+            </a>
+          </div>
+          <div class = github-link>
+            <a href = https://github.com/toniliang-10 target = _blank>
+              <img class = github-icon src = pictures/contact-me-pics/github-icon.png>
+            </a>
+          </div>
+          <div class = gmail-link>
+            <a href = "https://mail.google.com/mail/?view=cm&fs=1&to=toniliang10@gmail.com" target = _blank>
+              <img class = gmail-icon src = pictures/contact-me-pics/gmail-icon.png>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class = message>
+        <form action="https://formsubmit.co/toniliang10@gmail.com" method = POST>
+          <p class = contacts-reach-out>
+            Send me a message!
+          </p>
+          <div>
+            <input class = input-name type = "text" name = "Name" placeholder= "Name" required>
+          </div>
+          <div>
+            <input class = input-email type = "email" name = "Email" placeholder= "Email Address" required>
+          </div>
+          <div>
+            <textarea class = textarea-message name = "Message" rows = "6" placeholder="Write your Message" autocomplete="off" required></textarea>
+          </div>
+          <div class = submit-button>
+            <input class = input-submit type = "submit">
+          </div>
+        </form>
+      </div>
+    </section>
+    
   </body>
 </html>

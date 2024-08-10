@@ -1,0 +1,122 @@
+.contact-me{
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts {
+  margin: 300px 0 0 100px;
+  flex: 1;
+}
+.contacts-reach-out{
+  margin-top: 150px 0 0 50px;
+  font-size: 70px;
+  text-align: center;
+}
+.photo-and-contacts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  margin-top: -30px;
+}
+.contact-profile-photo{
+  width: 250px;
+  border-radius: 600px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #5e43f3;
+
+}
+.my-contacts{
+  align-items: center;
+  text-align: center;
+}
+.email-icon{
+  margin-top: 20px;
+  width: 50px;
+}
+.phone-icon{
+  width: 30px;
+  margin-top: 20px;
+}
+.my-email, .my-number{
+  font-size: 30px;
+  margin-top: 0;
+}
+.links-to-other-sites{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+.linkedin-link{
+  flex: 1;
+  text-align: center;
+}
+.linkedin-icon{
+  width: 100px;
+}
+.github-link{
+  flex: 1;  
+  text-align: center;
+}
+.github-icon{
+  width: 75px;
+}
+.gmail-link{
+  flex: 1;  
+  text-align: center;
+}
+.gmail-icon{
+  width: 75px;
+}
+
+
+.message{
+  margin-top: 100px;
+  flex: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-name, .input-email, .textarea-message{
+  font-family: Condensed;
+  background-color: rgb(56,56,56);
+  color: white;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 15px 0 15px 10px;
+  width: 700px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #5e43f3;
+}
+.input-name::placeholder, .input-email::placeholder, .textarea-message::placeholder {
+  color: rgb(192,192,192); 
+  opacity: 1; 
+}
+.input-name:focus, .input-email:focus, .textarea-message:focus {
+  border-color: #5e43f3; 
+  outline: none;
+}
+.input-name:autofill, .input-email:autofill, .textarea-message:autofill, input:not(:autofill) {
+  transition: background-color 0.5s ease, color 0.5s ease; 
+}
+
+
+.submit-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.input-submit{
+  font-size: 30px;;
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 0;
+  background-color: #5e43f3;
+  color: white;
+}
+.input-submit:hover{
+  cursor: pointer;
+}
