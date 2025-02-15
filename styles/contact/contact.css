@@ -1,3 +1,7 @@
+body {
+  size: 100%;
+  margin-bottom: 100px;
+}
 .contact-me{
   display: flex;
   flex-direction: row;

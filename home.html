@@ -11,8 +11,7 @@
     <link rel = "stylesheet" href = "styles/introduction.css">
     <link rel = "stylesheet" href = "styles/resume-introduction.css">
     <link rel = "stylesheet" href = "styles/resume.css">
-    <link rel = "stylesheet" href = "styles/resume-middle-section.css">
-    <link rel = "stylesheet" href = "styles/projects.css">
+    <!-- <link rel = "stylesheet" href = "styles/projects.css">  -->
 
     <style>
 
@@ -78,12 +77,12 @@
       </div>
     </section>
 
-    <section class = resume-introduction>
-      <div>
-        <p class = resume-greetings>
-        Hi, my name is Toni, nice to meet you &#129309;
+    <section class="resume-introduction">
+      <div class="resume-introduction-content">
+        <p class="resume-greetings">
+          Hi, my name is Toni, nice to meet you &#129309;
         </p>
-        <p class = resume-description>
+        <p class="resume-description">
           My journey as a software engineer and mathematician began when I first picked up a Lego piece from a pile in the corridor of my house and thought to myself, 
           "Can I build a house with this?" And yes, I could, and I did. But more importantly, I discovered that given enough resources, one can build anything from nothing. 
           This journey then led me to chess, where I learned tactics and various ways to find solutions to checkmating the king. I devoted years to mastering this game. 
@@ -91,216 +90,222 @@
         </p>
       </div>
       
+      <!-- Add wave decoration at bottom -->
+      <div class="wave-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+        </svg>
+      </div>
     </section>
 
-    <section class = resume-section>
-      <div class = resume>
-        <div class = work>
-          <div class = resume-category-top>
-            <img class = resume-categories-icon src = pictures/resume-pics/work-icon.png>
-            <p class = resume-category-title>
-              Work / Experience
-            </p>
+    <section class="resume-section">
+      <div class="resume-grid">
+        <!-- Work Experience Card -->
+        <div class="resume-card">
+          <div class="card-header">
+            <div class="header-icon">
+              <img src="pictures/resume-pics/work-icon.png" alt="Work Experience">
+            </div>
+            <h2>Work Experience</h2>
           </div>
-          <div class = resume-category-middle>
-            <div class = job-experiences>
-              <div class = first-job>
-                <div class = jobTitle-date>
-                  <p class = jobTitle>
-                    Operating Monitor
-                  </p>
-                  <p class = job-date>
-                    Aug'24 - Present
-                  </p>
-                </div>
-                <div class = job-company-location>
-                  <p class = job-company>
-                    Recreation Center, 
-                  </p>
-                  <p class = job-location>
-                    Stony Brook University
-                  </p>
-                </div>
-                <div class = job-description>
-                  <p>
-                    Here, I supervised the facility and monitored the entrance of members through screening. My most enjoyable hours were spent operating intramural sports games, 
-                    providing a professional level of competition for participants. When members got injured, I assisted them and provided the best support possible.
-                  </p>
-                  <p class = job-dot>
-                    &#x22A1; 
-                  </p>
-                </div>
+          
+          <div class="card-content">
+            <!-- Teaching Assistant Role -->
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3>Data Structures & Algorithms and Calculus IV Teaching Assistant</h3>
+                <span class="date">Aug'24 - Present</span>
               </div>
-              <div class = second-job>
-                <div class = jobTitle-date>
-                  <p class = jobTitle>
-                    Technician 
-                  </p>
-                  <p class = job-date>
-                    Jan'23 - May'23 (5 Months)
-                  </p>
-                </div>
-                <div class = job-company-location>
-                  <p class = job-company>
-                    Staples,
-                  </p>
-                  <p class = job-location>
-                    Stony Brook, NY, 11790
-                  </p>
-                </div>
-                <div class = job-description>
-                  <p>
-                    During my time at Staples, I troubleshot 50+ computers to fix software application anomalies and configured some of them for conventional use. 
-                    In addition, I instructed more than 50 inexperienced customers on modern computers and how to use basic software. 
-                    When there was no movement, I helped assemble technical devices and furniture as needed.
-                  </p>
-                  <p class = job-dot>
-                    &#x22A1; 
-                  </p>
-                </div>
+              <div class="company-info">
+                <span class="company">Stony Brook University</span>
+                <span class="location">Stony Brook, NY</span>
               </div>
-              <div class = third-job>
-                <div class = jobTitle-date>
-                  <p class = jobTitle>
-                    Generalist
-                  </p>
-                  <p class = job-date>
-                    Oct'22 - Dec'22 (4 Months)
-                  </p>
-                </div>
-                <div class = job-company-location>
-                  <p class = job-company>
-                    Macy's,
-                  </p>
-                  <p class = job-location>
-                    Lake Grove, NY, 11755 (Seasonal worker)
-                  </p>
-                </div>
-                <div class = job-description>
-                  <p>
-                    At Macy's, I administered front-line customer service roles as a cashier, 
-                    provided support via telephone by addressing inquiries and concerns, and organized clothing, accessories, 
-                    and other merchandise when customers weren't purchasing at the register.
-                  </p>
-                  <p class = job-dot>
-                    &#x22A1;  
-                  </p>
-                </div>
+              <p class="description">
+                As a Teaching Assistant at Stony Brook University, 
+                I conducted weekly recitation sessions for both Data Structures and Algorithms and Calculus IV courses, for a total
+                of 250+ students combined in both courses,
+                teaching data structures, time complexity analysis, and guided students in Differential Equation
+                Applications to the real world. In addition, I hosted weekly office hours, providing homework assistance 
+                and exam preparation. My most enjoyable work was collaborating with professors
+                to design LeetCode-inspired assignments for the Data Structures and Algorithms, and create homework assignments
+                in Differential Equations with real world applications for Calculus IV.
+              </p>
+            </div>
+    
+            <!-- Recreation Center Role -->
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3>Associate</h3>
+                <span class="date">Aug'24 - Present</span>
               </div>
+              <div class="company-info">
+                <span class="company">Recreation Center</span>
+                <span class="location">Stony Brook University</span>
+              </div>
+              <p class="description">
+                As an associate, I assisted in hosting over 100 teams in intramural sports tournaments, 
+                ensuring smooth operations during competitive games. In addition, my team and I
+                conducted regular building inspections and addressed safety concerns promptly. Every year, we 
+                assisted in onboarding and training new staff through operational procedures, as it is always fun meeting the 
+                new team
+              </p>
+            </div>
+    
+            <!-- Previous Jobs -->
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3>Technician</h3>
+                <span class="date">Jan'23 - May'23</span>
+              </div>
+              <div class="company-info">
+                <span class="company">Staples</span>
+                <span class="location">Stony Brook, NY</span>
+              </div>
+              <p class="description">
+                During my time at Staples, I troubleshot 50+ computers to fix software application anomalies 
+                and configured some of them for conventional use. In addition, I instructed more than 50 
+                inexperienced customers on modern computers and how to use basic software.
+              </p>
+            </div>
+    
+            <div class="experience-item">
+              <div class="experience-header">
+                <h3>Generalist</h3>
+                <span class="date">Oct'22 - Dec'22</span>
+              </div>
+              <div class="company-info">
+                <span class="company">Macy's</span>
+                <span class="location">Lake Grove, NY</span>
+              </div>
+              <p class="description">
+                At Macy's, I administered front-line customer service roles as a cashier, provided support 
+                via telephone by addressing inquiries and concerns, and organized merchandise.
+              </p>
             </div>
           </div>
-          <div class = resume-category-bottom>
+        </div>
+    
+        <!-- Leadership Card -->
+        <div class="resume-card">
+          <div class="card-header">
+            <div class="header-icon">
+              <img src="pictures/resume-pics/leadership-icon.png" alt="Leadership">
+            </div>
+            <h2>Leadership</h2>
+          </div>
+          
+          <div class="card-content">
+            <div class="leadership-content">
+              <!-- Web Development Club Role -->
+              <div class="leadership-main">
+                <h3>Vice President</h3>
+                <div class="company-info">
+                  <span class="company">Web Development Club</span>
+                  <span class="location">Stony Brook University</span>
+                  <span class="date">2024 - Present</span>
+                </div>
+                <p class="description">
+                  As Vice President of Web Development Club, I coordinated activities of five executive board members, 
+                  and constatnly advertized club events leading to 30% increase in member participation 
+                  and 25% growth in event attendance. Our team hosted and launched 
+                  an annual hackathon event with 150+ student participants, and helped members land and secure a place in tech companies 
+                </p>
+              </div>
+            
+              <div class="leadership-section">
+                <h4>Key Achievements</h4>
+                <div class="section-content">
+                  <img src="pictures/resume-pics/accomplishment.png" alt="Achievements" class="section-icon">
+                  <ul class="achievements-list">
+                    <li>Increased member participation by 30% and event attendance by 25%</li>
+                    <li>Secured industry speakers from leading tech companies</li>
+                    <li>Launched hackathon with 150+ student participation</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <!-- Klik Photography Role -->
+              <div class="leadership-main" style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(94, 67, 243, 0.1);">
+                <h3>CO-FOUNDER / TEAM LEADER</h3>
+                <div class="company-info">
+                  <span class="company">Klik Photography/360</span>
+                  <span class="date">June'23 - Present</span>
+                  <span class="location">Times Square, NY</span>
+                </div>
+                <p class="description">
+                  I am the Co-founder and Senior Team Leader of Klik Photography/360, a thriving business in Times Square. 
         
-          </div>
-
-        </div>
-        <div class = leadership>
-          <div class = resume-category-top>
-            <img class = resume-categories-icon src = pictures/resume-pics/leadership-icon.png>
-            <p class = resume-category-title>
-              Leadership / Team
-            </p>
-          </div>
-
-          <div class = resume-category-middle>
-            <div class = leadership-header>
-              <div class = leadership-title>
-                CO-FOUNDER / TEAM LEADER 
+                </p>
               </div>
-              <p>
-                Klik Photography/360
-              </p>
-              <p class = leadership-date>
-                June'23 - Present
-              </p>
-              <p class = leadership-location>
-                @ Time Square, NY
-              </p>
-            </div>
-            <div class = leadership-description>
-              I am the co-founder and one of the heads of Klik Photography/360, a thriving business in the heart of Times Square. 
-              My leadership ensures that every client enjoys a top-notch experience, making their time in Times Square unforgettable.
-            </div>
-            <div class = leadership-work>
-              <p class = leadership-our-work>
-                Our Work
-              </p>
-              <img class = camera-pic src = pictures/resume-pics/camera.png>
-              <p class = leadership-our-work-description>
-              Leading a hardworking team, I oversee all sales operations, leveraging my strong communication skills to guide and inspire my team. 
-              We specialize in capturing memorable moments for tourists through Photography and 360&deg; videos, to commemorate their visit to this iconic location.
-              </p>
-            </div>
-            <div class = leadership-accomplishments>
-              <p class = leadership-our-accomplishments>
-                Accomplishments
-              </p>
-              <img class = accomplismnet-img src = pictures/resume-pics/accomplishment.png>
-              <div class = leadership-accomplishments-description>
-                <p>
-                Led two social media accounts to millions of followers 
-                </p>
-                <p>
-                  &#x22A1; 
-                </p>
-                <p>
-                  Led the business to a six-figure revenue
-                </p>
-                <p>
-                  &#x22A1; 
-                </p>
-                <p>
-                  Built strong relationships with celebrities and influencers
-                </p>
-                <p>
-                  &#x22A1; 
-                </p>
+            
+              <div class="leadership-section">
+                <h4>Our Work</h4>
+                <div class="section-content">
+                  <img src="pictures/resume-pics/camera.png" alt="Camera" class="section-icon">
+                  <p>
+                    My work consists of leading a dedicated team, overseeing sales operations and capturing memorable moments 
+                    through Photography and 360° videos for tourists.
+                  </p>
+                </div>
+              </div>
+            
+              <div class="leadership-section">
+                <h4>Key Achievements</h4>
+                <div class="section-content">
+                  <img src="pictures/resume-pics/accomplishment.png" alt="Achievements" class="section-icon">
+                  <ul class="achievements-list">
+                    <li>Led two social media accounts to millions of followers</li>
+                    <li>Achieved six-figure revenue milestone</li>
+                    <li>Built strong relationships with celebrities and influencers</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class = education>
-          <div class = resume-category-top>
-            <img class = resume-categories-icon src = pictures/resume-pics/education-icon.png>
-            <p class = resume-category-title>
-              Education
-            </p>
-          </div>
-
-          <div class = resume-category-middle>
-            <div class = education-general-info>
-              <p class = education-school>
-                Stony Brook University
-              </p>
-              <p>
-                Areas of Study:
-              </p>
-              <p class = education-degree>
-                Computer Science and Applied Mathematics and Statistics
-              </p>
-              <p class = Deans-List>
-                Dean's List
-              </p>
-              <p class = GPA>
-                GPA: 3.7/4.00
-              </p>
-              <p class = graduation>
-                Graduation: May 2026
-              </p>
+    
+        <!-- Education Card -->
+        <div class="resume-card">
+          <div class="card-header">
+            <div class="header-icon">
+              <img src="pictures/resume-pics/education-icon.png" alt="Education">
             </div>
-            <div class = education-ta>
-              <p class = ta-title>
-                Teaching Assistant
-              </p>
-              <img src = pictures/resume-pics/ta.png width = 50px >
-              <p class = ta-course>
-                Calculus IV
-              </p>
-              <p class = ta-description>
-                As a teaching assistant, I conduct 2-hour weekly recitation sessions to reinforce course material,
-                hold 2-hour office hours each week to assist students with questions and concerns, 
-                and assist the professor in preparing tests.
-              </p>
+            <h2>Education</h2>
+          </div>
+          
+          <div class="card-content">
+            <div class="education-main">
+              <h3>Stony Brook University</h3>
+              <div class="degree-info">
+                <h4>Double Major</h4>
+                <p>Computer Science and Applied Mathematics and Statistics</p>
+                <div class="academic-highlights">
+                  <span class="highlight">Dean's List</span>
+                  <span class="highlight">GPA: 3.63/4.00</span>
+                  <span class="graduation">Expected: May 2026</span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="education-experience">
+              <div class="ta-section">
+                <h4>Educational Work: Teaching Assistant for the Courses Below:</h4>
+                <div class="section-content">
+                  <img src="pictures/resume-pics/ta.png" alt="Teaching" class="section-icon">
+                  <div class="ta-details">
+                    <span class="course">Data Structures & Algorithms</span>
+                    <p class="description">
+                      Where I currently teach 120+ students about Time Complexity and Algorithm Optimization through
+                      Data Structures and Assist the Professor in Creating LeetCode-inspired questions
+                    </p>
+                    <span class="course">Calculus IV</span>
+                    <p class="description">
+                      Where I taught 120+ students in mastering Differential Equations, focusing on Real World Applications
+                      using Mathematical Models and DE systems.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

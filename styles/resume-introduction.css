@@ -1,16 +1,115 @@
-.resume-introduction{
-  background-color: #5e43f3;
-  display: flex;
-  text-align: center;
+.resume-introduction {
+  background: linear-gradient(135deg, #5e43f3 0%, #7e68ff 100%);
+  position: relative;
+  padding: 60px 20px 340px;
   margin-top: -30px;
+  text-align: center;
+  overflow: hidden;
 }
-.resume-greetings{
-  font-size: 30px;
-  padding-top: 10px;
+
+/* Background pattern overlay */
+.resume-introduction::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.1) 2%, transparent 0%);
+  background-size: 50px 50px;
+  opacity: 0.3;
+}
+
+/* Container for content */
+.resume-introduction-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.resume-greetings {
+  font-size: 32px;
   font-weight: 700;
+  color: white;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
 }
-.resume-description{
+
+.resume-description {
   font-size: 20px;
-  font-style: italic;
-  padding-bottom: 300px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease 0.2s forwards;
+}
+
+/* Decorative elements */
+.resume-description::before,
+.resume-description::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.3);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.resume-description::before {
+  top: -15px;
+}
+
+.resume-description::after {
+  bottom: -15px;
+}
+
+/* Wave decoration at the bottom */
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+  fill: #282828;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .resume-introduction {
+    padding: 40px 20px 300px;
+  }
+
+  .resume-greetings {
+    font-size: 28px;
+  }
+
+  .resume-description {
+    font-size: 18px;
+    line-height: 1.6;
+  }
 }
